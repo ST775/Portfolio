@@ -38,18 +38,18 @@ header{
 #contents{
     display: flex;
 }
-
+/* 
 #sidebar{
     width: 20%;
     padding:15px;
-}
+} */
 
 #sidebar:hover{
     color:gray
 }
 
 #main-contents{
-    width: 80%;
+    width: 100%;
 }
 
 body{
