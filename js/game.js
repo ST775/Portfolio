@@ -24,11 +24,6 @@ window.onload = () => {
 
     npc2.draw(directions.up);
     npc2.move();
-
-    var bgm = new Audio("sound/bgm.mp3");
-    bgm.play();
-    bgm.volume = 0.03;
-    bgm.loop = true;
 };
 
 document.addEventListener("keydown", (event) => {

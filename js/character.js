@@ -17,6 +17,7 @@ class Character {
         this.img = img;
         this.direction = directions.down;
         this.talkWith = null;
+        this.firstMove = false;
     }
     draw(direction) {
         this._unregister();
@@ -24,6 +25,14 @@ class Character {
         this._register();
     }
     move(key) {
+        // 動いていない時
+        if (!this.firstMove) {
+            var bgm = new Audio("sound/bgm.mp3");
+            bgm.play();
+            bgm.volume = 0.01;
+            bgm.loop = true;
+            this.firstMove = true;
+        }
         // 会話中:動けなくする
         if (this.talkWith != null) {
             return;
@@ -199,6 +208,7 @@ class NPC extends Character {
         this.speaking = false;
         this.topicNum = null;
         this.topicStep = 0;
+        this.firstMove = true;
     }
     move() {
         this.timer = setInterval(() => {
