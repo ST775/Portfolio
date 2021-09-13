@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <!--文字コードを指定
+    utf8<--ほぼ全ての言語
+    -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ホームページ</title>
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h1>PIEN</h1>
+        </a>
+        <h2>ようこそ、ホームページへ</h2>
+        <nav id="top-nav">
+            <a href="index.html">トップページ</a>
+            <a href="#">制作日記</a>
+        </nav>
+    </header>
+    <canvas id="my-canvas" class="game" width=640 height=480></canvas>
+    <canvas id="message-window" class="game" width=640 height=200></canvas>
+
+    <p>更新履歴</p>
+    <div id="update">
+        <ul>
+            <li>2021/8/24 Ver1.02</li>
+            <li>2021/8/20 Ver1.01</li>
+            <li>2010/8/21 αTest</li>
+            <li>2010/8/11 開発開始</li>
+        </ul>
+    </div>
+    <div id="contents">
+        <section id="main-contents">
+            <article>
+                <h3>2021/8/24 Ver1.02公開しました</h3>
+                <p>バグの修正大変でした</p>
+                <p>続きを読む</p>
+            </article>
+
+            <article>
+                <h3>2021/8/24 Ver1.01公開しました</h3>
+                <img src="img/ver1.02.jpg">
+                <p>バグの修正大変でした</p>
+                <a href="ver1.02.html">続きを読む</a>
+            </article>
+            <article>
+                <h3>2010/8/21 αTest公開</h3>
+                <p>たいへんでした</p>
+            </article>
+        </section>
+        <aside id="sidebar">
+            サイドバー
+            <ul>
+                <li>カテゴリー1</li>
+                <ul>
+                    <li>種類1</li>
+                    <li>種類2</li>
+                </ul>
+                <li>カテゴリー2</li>
+                <ul>
+                    <li>種類1</li>
+                    <li>種類2</li>
+                </ul>
+            </ul>
+        </aside>
+
+    </div>
+    <footer>
+        <nav>
+            <a href="index.html">トップページ</a>
+            <a href="#">制作日記</a>
+        </nav>
+
+        <a>Copyright2021</a>
+    </footer>
+    <!-- <script type="text/javascript" src="js/main.js"></script> -->
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/character.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+</body>
+
+</html>
